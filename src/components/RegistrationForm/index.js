@@ -34,9 +34,13 @@ export default class RegistrationForm extends Component {
     formSubmitEvent.preventDefault()
 
     const {firstName, lastName} = this.state
+    const isInputFirstNameEmpty = firstName === ''
+    const isInputLastNameEmpty = lastName === ''
     const isCurrentSubmissionSuccess = firstName !== '' && lastName !== ''
 
     this.setState({
+      isFirstNameEmpty: isInputFirstNameEmpty,
+      isLastNameEmpty: isInputLastNameEmpty,
       isSubmissionSuccess: isCurrentSubmissionSuccess,
     })
   }
