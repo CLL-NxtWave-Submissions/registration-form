@@ -80,7 +80,7 @@ export default class RegistrationForm extends Component {
                 className={`registration-form-input ${
                   isFirstNameEmpty && 'missing-input'
                 }`}
-                value={firstName}
+                // value={firstName}
                 onBlur={this.onFirstNameInputBlur}
               />
               {isFirstNameEmpty && (
@@ -101,10 +101,10 @@ export default class RegistrationForm extends Component {
                 className={`registration-form-input ${
                   isLastNameEmpty && 'missing-input'
                 }`}
-                value={lastName}
-                onBlur={this.onFirstNameInputBlur}
+                // value={lastName}
+                onBlur={this.onLastNameInputBlur}
               />
-              {isFirstNameEmpty && (
+              {isLastNameEmpty && (
                 <p className="missing-input-message">Required</p>
               )}
             </div>
