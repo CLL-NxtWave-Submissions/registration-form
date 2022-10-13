@@ -108,7 +108,11 @@ export default class RegistrationForm extends Component {
                 <p className="missing-input-message">Required</p>
               )}
             </div>
-            <button type="submit" className="submit-button">
+            <button
+              type="submit"
+              className="submit-button"
+              onClick={this.onSubmitAnotherResponse}
+            >
               Submit
             </button>
           </form>
