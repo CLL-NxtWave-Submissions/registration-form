@@ -1,0 +1,101 @@
+.registration-form-bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
+  padding: 1.5rem;
+  font-family: 'Roboto';
+}
+
+.registration-form-header {
+  color: #ea580c;
+  font-size: 2.5rem;
+  font-weight: 550;
+  text-align: center;
+}
+
+.registration-form-input-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 0.5rem 0 #cbd2d9;
+}
+
+.registration-form-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.registration-form-input-label {
+  color: #475569;
+  font-size: 1.2rem;
+  font-weight: 550;
+  margin-bottom: 0.5rem;
+}
+
+.registration-form-input {
+  border: 0.1rem solid #9aa5b1;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  background-color: inherit;
+  align-self: center;
+  margin-bottom: 0.25rem;
+  font-size: 1.5rem;
+}
+
+.missing-input {
+  border: 0.1rem solid #ff0b37;
+  background-color: #fef2f4;
+}
+
+.missing-input-message {
+  color: #ff0b37;
+  font-size: 0.8rem;
+}
+
+.submit-button {
+  background-color: #ea580c;
+  color: #ffffff;
+  border-radius: 0.8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  align-self: stretch;
+}
+
+.registration-success-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.submission-success-icon-img {
+  height: 3rem;
+  width: 3rem;
+  margin-bottom: 1rem;
+}
+
+.submission-success-message {
+  color: #475569;
+  font-size: 1.3rem;
+  font-weight: 550;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .submit-button {
+    align-self: auto;
+  }
+}
