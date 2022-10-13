@@ -13,15 +13,20 @@ export default class RegistrationForm extends Component {
 
   onFirstNameInputBlur = firstNameBlurEvent => {
     const changedFirstName = firstNameBlurEvent.target.value
+    const isInputFirstNameEmpty = changedFirstName === ''
     this.setState({
       firstName: changedFirstName,
+      isFirstNameEmpty: isInputFirstNameEmpty,
     })
   }
 
   onLastNameInputBlur = lastNameBlurEvent => {
     const changedLastName = lastNameBlurEvent.target.value
+    const isInputLastNameEmpty = changedLastName === ''
+
     this.setState({
       lastName: changedLastName,
+      isLastNameEmpty: isInputLastNameEmpty,
     })
   }
 
@@ -29,13 +34,9 @@ export default class RegistrationForm extends Component {
     formSubmitEvent.preventDefault()
 
     const {firstName, lastName} = this.state
-    const isInputFirstNameEmpty = firstName === ''
-    const isInputLastNameEmpty = lastName === ''
     const isCurrentSubmissionSuccess = firstName !== '' && lastName !== ''
 
     this.setState({
-      isFirstNameEmpty: isInputFirstNameEmpty,
-      isLastNameEmpty: isInputLastNameEmpty,
       isSubmissionSuccess: isCurrentSubmissionSuccess,
     })
   }
