@@ -51,13 +51,7 @@ export default class RegistrationForm extends Component {
     })
 
   render() {
-    const {
-      firstName,
-      lastName,
-      isFirstNameEmpty,
-      isLastNameEmpty,
-      isSubmissionSuccess,
-    } = this.state
+    const {isFirstNameEmpty, isLastNameEmpty, isSubmissionSuccess} = this.state
 
     return (
       <div className="registration-form-bg-container">
@@ -81,7 +75,6 @@ export default class RegistrationForm extends Component {
                 className={`registration-form-input ${
                   isFirstNameEmpty && 'missing-input'
                 }`}
-                // value={firstName}
                 onBlur={this.onFirstNameInputBlur}
               />
               {isFirstNameEmpty && (
@@ -102,7 +95,6 @@ export default class RegistrationForm extends Component {
                 className={`registration-form-input ${
                   isLastNameEmpty && 'missing-input'
                 }`}
-                // value={lastName}
                 onBlur={this.onLastNameInputBlur}
               />
               {isLastNameEmpty && (
