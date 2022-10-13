@@ -50,6 +50,7 @@
   align-self: center;
   margin-bottom: 0.25rem;
   font-size: 1.5rem;
+  outline: none;
 }
 
 .missing-input {
