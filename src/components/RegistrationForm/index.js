@@ -61,7 +61,7 @@ export default class RegistrationForm extends Component {
     return (
       <div className="registration-form-bg-container">
         <h1 className="registration-form-header">Registration</h1>
-        {isSubmissionSuccess ? (
+        {!isSubmissionSuccess ? (
           <form
             className="registration-form-input-content-container"
             onSubmit={this.onRegistrationFormSubmit}
